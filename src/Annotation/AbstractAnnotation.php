@@ -2,7 +2,9 @@
 
 namespace BowlOfSoup\NormalizerBundle\Annotation;
 
-abstract class AbstractAnnotation
+use Symfony\Component\Serializer\Annotation\Groups;
+
+abstract class AbstractAnnotation extends Groups
 {
     protected const EXCEPTION_EMPTY = 'Parameter "%s" of annotation "%s" cannot be empty.';
     protected const EXCEPTION_TYPE = 'Wrong datatype used for property "%s" for annotation "%s"';

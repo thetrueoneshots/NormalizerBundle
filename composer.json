@@ -19,7 +19,8 @@
     "doctrine/cache": "~1.0",
     "php": ">=7.2",
     "symfony/framework-bundle": "~4.4|~5.0",
-    "symfony/translation": "~4.4|~5.0"
+    "symfony/translation": "~4.4|~5.0",
+    "symfony/serializer": "^5.4"
   },
   "require-dev": {
     "doctrine/common": "~2.12",

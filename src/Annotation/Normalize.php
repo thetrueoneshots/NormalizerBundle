@@ -54,6 +54,10 @@ class Normalize extends AbstractAnnotation
                 $this->$propertyName = $propertyValue;
             }
         }
+
+        parent::__construct([
+            'value' => !$this->group ? ['default'] : $this->group,
+        ]);
     }
 
     public function getName(): ?string
